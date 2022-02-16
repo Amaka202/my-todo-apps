@@ -1,0 +1,20 @@
+
+<div class="app-body">
+  <div class="app-container" id="taskList">
+    <h1 class="app-header">TO DO LIST</h1>
+    <app-add-todo></app-add-todo>
+    <div class="empty-state" *ngIf="todoList.length < 1">
+      No items added yet
+    </div>
+    <ul class="task-list">
+
+      <li class="task-list-item" *ngFor="let todo of todoList" >
+        <label class="task-list-item-label">
+          <input type="checkbox" (click)="toggleTodo(todo)" [checked]="todo.done">
+          <span>{{todo.description}}</span>
+        </label>
+        <span class="delete-btn" title="Delete Todo" (click)="deleteTodo(todo.id)"></span>
+      </li>
+    </ul>
+  </div>
+</div>

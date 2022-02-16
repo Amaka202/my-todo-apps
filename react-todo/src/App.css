@@ -1,0 +1,40 @@
+
+
+.app-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 10rem;
+}
+
+.app-container{
+  width: 50%;
+}
+
+.todo-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.todo-form input{
+  width: 50%;
+  display: block;
+  padding: 10px;
+}
+
+.link-btn{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+

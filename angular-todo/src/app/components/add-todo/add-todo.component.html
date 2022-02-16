@@ -1,0 +1,4 @@
+<form class="add-task" (ngSubmit)="addTodo()">
+  <input type="text" autocomplete="off" name="todo-item" placeholder="Add New Task" [(ngModel)]="todo.description" class="task-input">
+  <input type="submit" value="" class="submit-task"  title="Add Task">
+</form>
